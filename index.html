@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baba, Arabayı Alabilir miyim?</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #2b1055, #7597de);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      background-color: white;
+      color: #2b1055;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #message {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffe26f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Baba, yarın İstanbul’a gideceğim... Arabayı verir misin?</h1>
+  <div class="buttons">
+    <button onclick="yes()">Evet 🚗</button>
+    <button onclick="no()">Hayır 😅</button>
+  </div>
+  <div id="message"></div>
+
+  <script>
+    function yes() {
+      document.getElementById("message").textContent = "Adamsınnnnn Babaaaa 🔥🙌";
+    }
+    function no() {
+      document.getElementById("message").textContent = "Olsun, şansımı denemiş oldum 😅";
+    }
+  </script>
+</body>
+</html>
